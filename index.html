@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+
+    <div class="grid">
+      <section class="items-wrapper">
+        <section class="product">
+          <figure>
+            <img src="vintage_backbag.jpg" alt="vintage_backbag" />
+          </figure>
+
+          <div class="details">
+            <div class="item_NamePrice">
+              <p class="name">Vintage Backbag</p>
+              <p class="price">
+                <span class="offer">$54.99</span>
+                <span class="crossed">$94.99</span>
+              </p>
+            </div>
+
+            <div class="item_quantity">
+              <input type="number" placeholder="0" value="1" class="item-count">
+            </div>
+          </div>
+        </section>
+
+        <section class="product">
+          <figure>
+            <img src="levi-shoes.jpg" alt="levi-shoes" />
+          </figure>
+
+          <div class="details">
+            <div class="item_NamePrice">
+              <p class="name">Levi Shoes</p>
+              <p class="price">
+                <span class="offer">$74.99</span>
+                <span class="crossed">$124.99</span>
+              </p>
+            </div>
+
+            <div class="item_quantity">
+              <input type="number" placeholder="0" value="1" class="item-count">
+            </div>
+          </div>
+        </section>
+
+        <section class="purchase-check">
+          <div class="shipping">
+            <h3>Shipping</h3>
+            <p>$19</p>
+          </div>
+
+          <div class="total">
+            <h3>Total</h3>
+            <p>$148.98</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="contact-info">
+        <h2 class="context">Contact information</h2>
+        <form>
+        <div class="input_container">
+          <label for="mail">E-mail</label>
+          <div>
+            <ion-icon name="mail"></ion-icon>
+            <input type="mail" placeholder="Enter your mail..." required />
+          </div>
+        </div>
+
+        <div class="input_container">
+          <label for="mail">Phone</label>
+          <div>
+            <ion-icon name="call"></ion-icon>
+            <input type="text" placeholder="Enter phone number..." required />
+          </div>
+        </div>
+      </section>
+
+      <section class="shipping-address">
+        <h2 class="context">Shipping address</h2>
+
+        <div class="input_container">
+          <label for="name">Full name</label>
+          <div>
+            <ion-icon name="person-circle"></ion-icon>
+            <input type="text" placeholder="Your fullname..." required />
+          </div>
+        </div>
+
+        <div class="input_container">
+          <label for="address">Address</label>
+          <div>
+            <ion-icon name="home"></ion-icon>
+            <input type="text" placeholder="Your address..." required />
+          </div>
+        </div>
+
+        <div class="input_container">
+          <label for="city">Your city</label>
+          <div>
+            <ion-icon name="business"></ion-icon>
+            <input type="text" placeholder="Your city..." required />
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="input_container">
+            <label for="Country">Country</label>
+            <div>
+              <ion-icon name="business"></ion-icon>
+              <select name="" id="" required>
+                <option value="" selected disabled>Select country</option>
+                <option value="India">India</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input_container">
+            <label for="code">Postal code</label>
+            <div>
+              <ion-icon name="subway"></ion-icon>
+              <input type="text" placeholder="Your postal code..." />
+            </div>
+          </div>
+        </div>
+
+        <div class="save-option">
+          <input type="checkbox" name="save" id="save" />
+          <label for="save">save this information for next time</label>
+        </div>
+
+        <button value="submit">Continue</button>
+      </section>
+    </form>
+    </div>
+  </body>
+</html>
